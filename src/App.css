@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+.header {
+  text-align: right;
+}
+a {
+  margin: 5px;
+}
+
+label {
+  display: block
+}
+
+.todo {
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+div {
+  text-align: center;
+}
