@@ -1,7 +1,7 @@
 import request from 'superagent';
 
 // API url -- different from the front end URL
-const URL = 'http://localhost:4000';
+const URL = 'https://immense-ocean-97679.herokuapp.com/';
 
 export async function signUp(email, password) {
     const response = await request
