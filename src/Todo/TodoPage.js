@@ -19,11 +19,11 @@ export default class TodosListPage extends Component {
     handleSubmit = async e => {
         e.preventDefault();
 
-        await addTodo(this.state.todo, this.props.user.token);
+        await addTodo(this.state.todo, this.props.token);
 
         await this.fetchTodos();
 
-        this.setState({ todo: '' })
+        this.setState({ todo: '' });
     }
 
     handleTodoChange = e => this.setState({ todo: e.target.value })
@@ -35,6 +35,8 @@ export default class TodosListPage extends Component {
     }
 
     render() {        
+        console.log(this.props);
+        console.log(this.state.todo);
         return (
             <div>
                 <h3>Welcome to the ToDo Page</h3>
